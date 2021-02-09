@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Home - nSauce</title>
+    <meta
+      name="description"
+      content="Browse your fav nHentai Sauce Codes [NFSW]"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - nHentai - Browser</title>
-    <meta name="description" content="Browse your fav nHentai Sauce Codes [NFSW]">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">nSauce<br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ml-auto"></ul>
-            </div>
+  <body>
+    <nav
+      class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient"
+    >
+      <div class="container">
+        <a class="navbar-brand logo" href="#">nSauce</a
+        ><button
+          data-toggle="collapse"
+          class="navbar-toggler"
+          data-target="#navbarNav"
+        >
+          <span class="sr-only">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto"></ul>
         </div>
+      </div>
     </nav>
-    <main class="page lanidng-page">
-        <section class="portfolio-block block-intro"><img src="assets/img/nhentai.png" width="40%">
-            <div class="container">
-                <div class="about-me">
-                    <p>nSauce is nHentai sauce code browser build to browse your fav nHentai with its sauce code</p>
-                </div>
+    <main class="page contact-page">
+      <section class="portfolio-block contact">
+        <div class="container">
+          <div class="heading">
+            <h2><img src="assets/img/nhentai.png" width="30%" /></h2>
+          </div>
+          <form onsubmit="visit()">
+            <div class="form-group">
+              <label for="subject">Enter Your Sauce Code</label
+              ><input class="form-control item" type="text" id="hcode" />
             </div>
-        </section>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block btn-lg" type="submit">
+                Visit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
-    <section class="portfolio-block website gradient">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3>DCMA</h3>
-                    <p>nSauce is just an nHentai Sauce code browser. All works, mangas are the works of their respective creators.<br><br>Websites used nHentai.net</p>
-                </div>
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3 class="text-left">Terms and Conditions</h3>
-                    <p class="text-left">nSauce don't track, store, manage or sell user data.<br><br></p>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer class="page-footer">
-        <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Projects</a></div>
-            <div class="social-icons"></div>
+      <div class="container">
+        <div class="links">
+          <a href="#">About me</a><a href="#">Projects</a>
         </div>
+        <div class="social-icons"></div>
+      </div>
     </footer>
+    <script>
+      function visit() {
+        // console.log(document.getElementById("hcode").value);
+        var hactcode = document.getElementById("hcode").value;
+        window.open(`https://nhentai.net/g/${hactcode}`, "_blank");
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/script.min.js"></script>
-</body>
-
+  </body>
 </html>

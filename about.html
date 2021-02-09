@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Contact - nHentai - Browser</title>
+    <title>About - nSauce</title>
     <meta
       name="description"
       content="Browse your fav nHentai Sauce Codes [NFSW]"
@@ -27,7 +27,7 @@
       class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient"
     >
       <div class="container">
-        <a class="navbar-brand logo" href="#">nSauce</a
+        <a class="navbar-brand logo" href="#">nSauce<br /></a
         ><button
           data-toggle="collapse"
           class="navbar-toggler"
@@ -41,26 +41,39 @@
         </div>
       </div>
     </nav>
-    <main class="page contact-page">
-      <section class="portfolio-block contact">
+    <main class="page lanidng-page">
+      <section class="portfolio-block block-intro">
+        <img src="assets/img/nhentai.png" width="40%" />
         <div class="container">
-          <div class="heading">
-            <h2><img src="assets/img/nhentai.png" width="30%" /></h2>
+          <div class="about-me">
+            <p>
+              nSauce is nHentai sauce code browser build to browse your fav
+              nHentai with its sauce code
+            </p>
           </div>
-          <form onsubmit="visit()">
-            <div class="form-group">
-              <label for="subject">Enter Your Sauce Code</label
-              ><input class="form-control item" type="text" id="hcode" />
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary btn-block btn-lg" type="submit">
-                Visit
-              </button>
-            </div>
-          </form>
         </div>
       </section>
     </main>
+    <section class="portfolio-block website gradient">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-5 offset-lg-1 text">
+            <h3>DCMA</h3>
+            <p>
+              nSauce is just an nHentai Sauce code browser. All works, mangas
+              are the works of their respective creators.<br /><br />Websites
+              used nHentai.net
+            </p>
+          </div>
+          <div class="col-md-12 col-lg-5 offset-lg-1 text">
+            <h3 class="text-left">Terms and Conditions</h3>
+            <p class="text-left">
+              nSauce don't track, store, manage or sell user data.<br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="page-footer">
       <div class="container">
         <div class="links">
@@ -69,13 +82,6 @@
         <div class="social-icons"></div>
       </div>
     </footer>
-    <script>
-      function visit() {
-        // console.log(document.getElementById("hcode").value);
-        var hactcode = document.getElementById("hcode").value;
-        window.open(`https://nhentai.net/g/${hactcode}`, "_blank");
-      }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
