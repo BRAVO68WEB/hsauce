@@ -1,84 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Home - nSauce</title>
-    <meta
-      name="description"
-      content="Browse your fav nHentai Sauce Codes [NFSW]"
-    />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css"
-    />
-  </head>
 
-  <body>
-    <nav
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Home - hSauce</title>
+  <meta name="description" content="Browse your fav nHentai Sauce Codes [NFSW]" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/ico">  
+  <style>
+    @import url(//db.onlinewebfonts.com/c/401b3afcdd14cf76b92956ecc7f7d8e6?family=Eras+Bold+ITC);
+
+    * {
+      font-family: "Eras Bold ITC";
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <nav
       class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient"
     >
       <div class="container">
-        <a class="navbar-brand logo" href="#">nSauce</a
-        ><button
-          data-toggle="collapse"
-          class="navbar-toggler"
-          data-target="#navbarNav"
-        >
-          <span class="sr-only">Toggle navigation</span
-          ><span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav ml-auto"></ul>
-        </div>
+        <a class="navbar-brand logo" href="#">hSauce</a>
       </div>
-    </nav>
-    <main class="page contact-page">
-      <section class="portfolio-block contact">
-        <div class="container">
-          <div class="heading">
-            <h2><img src="assets/img/nhentai.png" width="30%" /></h2>
+    </nav> -->
+  <main class="page contact-page">
+    <section class="portfolio-block contact" style="
+          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('assets/img/background.jpg');
+          background-size: cover;
+          overflow: hidden;
+          width: 100%;
+          height: 100vh;
+          background-position: center;
+          display: flex;
+          flex-direction: column;
+        ">
+      <div class="container" style="
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          ">
+        
+          <div class="text-center">
+            <img src="assets/img/nhentai.png" width="180px" />
           </div>
           <form onsubmit="visit()">
-            <div class="form-group">
-              <label for="subject">Enter Your Sauce Code</label
-              ><input class="form-control item" type="text" id="hcode" />
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary btn-block btn-lg" type="submit">
-                Visit
+            <div class="form-group text-white text-center col-xs-6">
+              <label for="subject">
+                <h1 class="title-font">State Your Sin</h1>
+              </label><input class="form-control item" type="text" id="hcode" placeholder="Enter hentai code ..." required>
+              </input>
+              <button class="btn btn-primary" type="submit">
+                <i class="fa fa-search"></i>
               </button>
             </div>
           </form>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="links">
-          <a href="#">About me</a><a href="#">Projects</a>
-        </div>
-        <div class="social-icons"></div>
       </div>
-    </footer>
-    <script>
-      function visit() {
-        // console.log(document.getElementById("hcode").value);
-        var hactcode = document.getElementById("hcode").value;
-        window.open(`https://nhentai.net/g/${hactcode}`, "_blank");
-      }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-  </body>
+    </section>
+  </main>
+
+  <script>
+    function visit() {
+      // console.log(document.getElementById("hcode").value);
+      var hactcode = document.getElementById("hcode").value;
+      window.open(`https://nhentai.net/g/${hactcode}`, "_blank");
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
+</body>
+
 </html>
